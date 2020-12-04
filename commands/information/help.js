@@ -24,7 +24,7 @@ module.exports = {
         if(!args[0]) {
             const categories = readdirSync("./commands/")
 
-            embed.setDescription(`**Prefix:** \`>\``)
+            embed.setDescription(`**Prefix:** \`?\``)
             embed.setFooter(`Alex VAULT`, bot.user.displayAvatarURL);
             
             
@@ -44,7 +44,7 @@ module.exports = {
             if(!command) return message.channel.send(embed.setTitle("Invalid Command.").setDescription(`Do \`${prefix}help\` for the list of the commands.`))
             command = command.config
 
-            embed.setDescription(stripIndents`**Prefix:** \`>\`\n
+            embed.setDescription(stripIndents`**Prefix:** \`?\`\n
             **Command:** ${command.name.slice(0, 1).toUpperCase() + command.name.slice(1)}
             **Description:** ${command.description || "No Description provided."}
             **Accessible by:** ${command.accessableby || "Members"}
