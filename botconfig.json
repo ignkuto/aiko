@@ -1,0 +1,10 @@
+{
+  "prefix": ">",
+  "region": "en",
+  "m": {
+    "basic": "Everyone",
+    "mod": "Moderators",
+    "admin": "Administrators",
+    "owner": "566073282252636180"
+  }
+}
